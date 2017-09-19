@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="jquery-3.2.1.js"></script>
+	<script>
+		function appendText(){
+			var txt1 = "<p>TEXT.</p>";
+			var txt2 = $("<p></p>").text("TEXT.")
+			var txt3 = document.createElement("p");
+			txt3.innerHTML = "TEXT.";
+			$("body").append(txt1,txt2,txt3);
+		}
+	</script>
+</head>
+<body>
+<p>This is a pargraph</p>
+<button onclick="appendText()">Append Text</button>
+
+</body>
+</html>
